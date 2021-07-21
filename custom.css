@@ -1,62 +1,62 @@
-h1, h2, h3, h4, h5, h6 {
-    font-family: rig-shaded-light-face, sans-serif;
-    font-style: normal;
-    font-weight: 300;
+h1, h2, h5, h6 {
+   	font-family: henriette, sans-serif;
+	font-weight: 400;
+	font-style: normal;
     line-height: 1.4em;
-    color: #1a1a1a;
+    color: #1A1A1A;
+}
+h3 {
+   	font-family: henriette, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+    line-height: 1.4em;
+    color: #1A1A1A;
+}
+h4 {  
+	font-family: le-monde-livre-classic-byol, serif;
+	font-weight: 300;
+	font-style: normal;
+	line-height: 1.4em;
+    color: #1A1A1A;
 }
 h7, p, body {
-    font-family: minion-pro, serif;
+    /*font-family: minion-pro, serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400; */
+	font-family: le-monde-livre-classic-byol, serif;
+	font-weight: 300;
+	font-style: normal;
     line-height: 1.6em;
     letter-spacing: .02em;
-    color: #1a1a1a;
+    color: #1A1A1A;
     text-indent: 0em;
-}
-h8 {  
-    font-family: century-gothic, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    color: #1a1a1a;
-}
-h9 {
-    font-family: century-gothic, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.8em;
-    letter-spacing: .02em;
-    color: #1a1a1a;
 }
 
 @media (min-width: 576px) {
       h1 {font-size: 6.5rem;}
       h2 {font-size: 4.2rem;}
-      h3 {font-size: 2.0rem;}
-      h4 {font-size: 1.6rem;}
+      h3 {font-size: 2.5rem;}
+      h4 {font-size: 1.5rem;}
+	  h5 {font-size: 1.8rem;}
       h7 {font-size: 1.5rem;}
-    h8 {font-size: 1.5rem;}
-     h9 {font-size: 1.4rem;}
       p, body {font-size: 1.3rem;}
   }
 @media (min-width: 768px) {
       h1 {font-size: 6.5rem;}
       h2 {font-size: 4.2rem;}
-      h3 {font-size: 2.6rem;}
-      h4 {font-size: 1.6rem;}
+      h3 {font-size: 3.0rem;}
+      h4 {font-size: 1.9rem;}
+	  h5 {font-size: 2.2rem;}
       h7 {font-size: 1.5rem;}
-    h8 {font-size: 1.5rem;}
-    h9 {font-size: 1.3rem;}
       p, body {font-size: 1.1rem;}
   }
 @media (min-width: 992px) {
       h1 {font-size: 6.5rem;}
       h2 {font-size: 4.2rem;}
-      h3 {font-size: 2.6rem;}
-      h4 {font-size: 1.63rem;}
+      h3 {font-size: 3.4rem;}
+      h4 {font-size: 1.9rem;}
+	  h5 {font-size: 2.0rem;}
       h7 {font-size: 1.5rem;}
-    h8 {font-size: 1.5rem;}
-    h9 {font-size: 1.3rem;}
       p, body {font-size: 1.1rem;}
   }
 
@@ -83,13 +83,13 @@ div.vspace3em {
     height: 3em;
 }
 div.graydiv {
-    background-color: #1a1a1a;
+    background-color: #1A1A1A;
 }
 div.whitediv {
-    background-color: #ffffff;
+    background-color: #FFFFFF;
 }
 div.reddiv {
-	background-color: #c2272d;
+	background-color: #C2272D;
 }
 img {
     object-fit: contain;
@@ -108,16 +108,16 @@ footer {
     text-align: center;
 }
 .footer h3,p {
-    color: black;
+    color: #1A1A1A;
 }
-.greenheader {
-    color: #17B890;
+.redheader {
+    color: #C2272D;
 }
 #whitetext {
     color: #FFFFFF;
 }
 #blacktext {
-    color: black;
+    color: #1A1A1A;
 }
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
     background-color: #3f4050 !important;
@@ -126,9 +126,9 @@ footer {
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
-  // needed to prevent janky scrolling in Safari
+  /*needed to prevent janky scrolling in Safari */
   backface-visibility: hidden;
-  //100% height of the viewport
+  //100% height /*of the viewport */
 	height: 100vh;
 	overflow: hidden;
 	position: relative;
@@ -151,16 +151,7 @@ footer {
 .carousel-control-next-icon !important {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%2317B890' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
       }
-/*Figma file */
-.responsive-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-}
+
 /*Figma file */
 .container {
   position: relative;
@@ -168,20 +159,7 @@ footer {
   width: 100%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
-.masonry { /* Masonry container */
-    -webkit-column-count: 3;
-  -moz-column-count:3;
-  column-count: 3;
-  -webkit-column-gap: 1em;
-  -moz-column-gap: 1em;
-  column-gap: 1em;
-   margin: 1.5em;
-    padding: 0;
-    -moz-column-gap: 1.5em;
-    -webkit-column-gap: 1.5em;
-    column-gap: 1.5em;
-    font-size: .85em;
-}
+
 .item {
     display: inline-block;
     background: #dee5e5;
@@ -195,26 +173,3 @@ footer {
     box-shadow: 2px 2px 4px 0 #1a1a1a;
 }
 .item img{max-width:100%;}
-
-/* Masonry photo gallery */
-@media only screen and (max-width: 600px) {
-    .masonry {
-        -moz-column-count: 1;
-        -webkit-column-count: 1;
-        column-count: 1;
-    }
-}
-@media only screen and (min-width: 601px) and (max-width: 992px){
-    .masonry {
-        -moz-column-count: 2;
-        -webkit-column-count: 2;
-        column-count: 2;
-    }
-}
-@media only screen and (min-width: 993px) {
-    .masonry {
-        -moz-column-count: 3;
-        -webkit-column-count: 3;
-        column-count: 3;
-    }
-}
