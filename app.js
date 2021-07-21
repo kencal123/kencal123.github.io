@@ -6,15 +6,15 @@ const form = document.getElementById('comments');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     db.collection('comments').add({
-        name:form.name.value,
-        comment:form.comment.value
-});
-form.name.value = '';
-form.comment.value = '';
+        name: form.name.value,
+        comment: form.comment.value
+    });
+    form.name.value = '';
+    form.comment.value = '';
 });
 // reading from db
 
-const div = document.querySeclector('.cont');
+const div = document.querySelector('.cont');
 
 renderList = (doc) => {
     var main_div = document.createElement('div');
@@ -33,10 +33,11 @@ renderList = (doc) => {
 }
 
 db.collection('comments').onSnapshot(snap => {
-    Let changes = snap.docChanges();
+    let changes = snap.docChanges();
     changes.forEach(change => {
         if (change.type == 'added') {
             renderList(change.doc);
+            console.log(change.doc.data());
         }
-    })
-})
+    });
+});
