@@ -3,7 +3,7 @@ h1, h2, h3, h4, h5, h6 {
     font-style: normal;
     font-weight: 300;
     line-height: 1.4em;
-    color: #070E08;
+    color: #1a1a1a;
 }
 h7, p, body {
     font-family: minion-pro, serif;
@@ -11,14 +11,14 @@ h7, p, body {
     font-weight: 400;
     line-height: 1.6em;
     letter-spacing: .02em;
-    color: #070E08;
+    color: #1a1a1a;
     text-indent: 0em;
 }
 h8 {  
     font-family: century-gothic, sans-serif;
     font-weight: 700;
     font-style: normal;
-    color: #070E08;
+    color: #1a1a1a;
 }
 h9 {
     font-family: century-gothic, sans-serif;
@@ -26,24 +26,9 @@ h9 {
     font-style: normal;
     line-height: 1.8em;
     letter-spacing: .02em;
-    color: #070E08;
+    color: #1a1a1a;
 }
-/* 
-bold italic: 
-font-family: century-gothic, sans-serif;
 
-font-weight: 700;
-
-font-style: italic;
-
-italic:
-font-family: century-gothic, sans-serif;
-
-font-weight: 400;
-
-font-style: italic;
-
-*/
 @media (min-width: 576px) {
       h1 {font-size: 6.5rem;}
       h2 {font-size: 4.2rem;}
@@ -74,14 +59,6 @@ font-style: italic;
     h9 {font-size: 1.3rem;}
       p, body {font-size: 1.1rem;}
   }
- /*
-h1 {font-size: 6.5rem;}
-h2 {font-size: 4.2rem;}
-h3 {font-size: 2.8rem;}
-h4 {font-size: 1.6rem;}
-h7 {font-size: 1.5rem;}
-p, body {font-size: 1.1rem;}
-*/
 
 .navbar-brand {
     font-family: rig-shaded-light-face, sans-serif;
@@ -106,10 +83,13 @@ div.vspace3em {
     height: 3em;
 }
 div.graydiv {
-    background-color: #3f4050;
+    background-color: #1a1a1a;
 }
-div.lightgreendiv {
-    background-color: #dee5e5;
+div.whitediv {
+    background-color: #ffffff;
+}
+div.reddiv {
+	background-color: #c2272d;
 }
 img {
     object-fit: contain;
@@ -212,7 +192,7 @@ footer {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    box-shadow: 2px 2px 4px 0 #070E08;
+    box-shadow: 2px 2px 4px 0 #1a1a1a;
 }
 .item img{max-width:100%;}
 
