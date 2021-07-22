@@ -13,7 +13,7 @@ form.addEventListener('submit', (e) => {
     form.comment.value = '';
 });
 // reading from db
-
+/*
 const div = document.querySelector('.cont');
 
 renderList = (doc) => {
@@ -31,7 +31,7 @@ renderList = (doc) => {
     main_div.appendChild(card_body);
     div.appendChild(main_div);
 }
-
+*/
 db.collection('comments').onSnapshot(snap => {
     let changes = snap.docChanges();
     changes.forEach(change => {
