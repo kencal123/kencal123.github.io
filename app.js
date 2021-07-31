@@ -35,6 +35,8 @@ renderList = (doc) => {
 }
 */
 db.collection('comments').onSnapshot(snap => {
+    //added line */
+    db.collection('comments').orderBy("date", Query.Direction.ASCENDING);
     let changes = snap.docChanges();
     changes.forEach(change => {
         if (change.type == 'added') {
