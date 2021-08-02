@@ -10,7 +10,7 @@ form.addEventListener('submit', (e) => {
     form.comment.value = '';
     //sendEmail();
 });
-form.addEventListener('submit', sendEmail);
+//form.addEventListener('submit', sendEmail);
 // reading from db
 /*
 const div = document.querySelector('.cont');
