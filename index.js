@@ -9,6 +9,6 @@ function sendEmail() {
 	Subject : "<Form Submission>",
 	Body : "<Someone has submitted a form on RedbirdCoveStrategies.com.  Please check their response at https://console.firebase.google.com/u/0/project/redbird-cove-comments-draft/firestore/data/~2Fcomments~2FucuHXWeX1KyWHFaELiZx>",
 	}).then(
-		message => alert("mail sent successfully")
+		message => alert("Message sent successfully. Thanks!")
 	);
 }
