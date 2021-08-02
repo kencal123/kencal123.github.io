@@ -8,7 +8,6 @@ form.addEventListener('submit', (e) => {
     form.name.value = '';
 	form.email.value = '';
     form.comment.value = '';
-    //sendEmail();
 });
 //form.addEventListener('submit', sendEmail);
 // reading from db
@@ -42,7 +41,7 @@ db.collection('comments').onSnapshot(snap => {
         }
     });
 });
-function sendEmail() {
+/*function sendEmail() {
 	Email.send({
         SecureToken : "<86e67c81-19eb-4b48-8267-5d885d9c0754>",
     //Host: "smtp.gmail.com",
