@@ -48,7 +48,8 @@ db.collection('comments').onSnapshot(snap => {
 });
 function sendEmail() {
 	Email.send({
-	SecureToken : "<86e67c81-19eb-4b48-8267-5d885d9c0754>",
+	console.log('sendemail'),
+        SecureToken : "<86e67c81-19eb-4b48-8267-5d885d9c0754>",
     //Host: "smtp.gmail.com",
 	//Username : "<emmaghealy.portfolio@gmail.com>",
 	//Password : "<Defender801!>",
