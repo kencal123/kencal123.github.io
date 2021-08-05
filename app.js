@@ -1,9 +1,9 @@
 /* eslint-env es6 */
 /* eslint-disable no-console */
 
-const form = document.getElementById('comments');
+//const form = document.getElementById('comments');
 // adding data to db
-form.addEventListener('submit', (e) => {
+/*form.addEventListener('submit', (e) => {
     e.preventDefault();
     form.name.value = '';
 	form.email.value = '';
@@ -30,9 +30,9 @@ renderList = (doc) => {
     div.appendChild(main_div);
 }
 */
-db.collection('comments').onSnapshot(snap => {
+/*db.collection('comments').onSnapshot(snap => {
     //added line */
-    db.collection('comments').orderBy("date", Query.Direction.ASCENDING);
+    /*db.collection('comments').orderBy("date", Query.Direction.ASCENDING);
     let changes = snap.docChanges();
     changes.forEach(change => {
         if (change.type == 'added') {
@@ -54,4 +54,4 @@ db.collection('comments').onSnapshot(snap => {
 	}).then(
 		message => alert("Message sent successfully. Thanks!")
 	);
-}
+} */
